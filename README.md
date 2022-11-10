@@ -77,3 +77,7 @@ App is available at https://cone.xyz...
 ```
 
 And that's it...
+
+## Multi-app
+
+Now sphere and cone can be accesssed from within the same deployment. One is under `/cone.html` and the other one under `/sphere.html`.

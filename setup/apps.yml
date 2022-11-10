@@ -1,7 +1,31 @@
 trame:
   cmd:
     - python
-    - /deploy/app.py
+    - /deploy/cone.py
+    - --host
+    - ${host}
+    - --port
+    - ${port}
+    - --authKey
+    - ${secret}
+    - --server
+
+cone:
+  cmd:
+    - python
+    - /deploy/cone.py
+    - --host
+    - ${host}
+    - --port
+    - ${port}
+    - --authKey
+    - ${secret}
+    - --server
+
+sphere:
+  cmd:
+    - python
+    - /deploy/sphere.py
     - --host
     - ${host}
     - --port
