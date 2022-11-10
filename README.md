@@ -29,6 +29,8 @@ cd trame-app-cone
 caprover deploy
 ```
 
+Then follow the flow of the questions to finish the deployment.
+
 ```bash
 Preparing deployment to CapRover...
 
