@@ -27,7 +27,9 @@ The idea is to rely directly on git so in order to deploy such repository, you s
 git clone https://github.com/Kitware/trame-app-cone.git
 cd trame-app-cone
 caprover deploy
+```
 
+```bash
 Preparing deployment to CapRover...
 
 ? select the CapRover machine name you want to deploy to: xyz
