@@ -25,7 +25,29 @@ The idea is to rely directly on git so in order to deploy such repository, you s
 
 ```bash
 git clone https://github.com/Kitware/trame-app-cone.git
-cd trame-app-cone.git
+cd trame-app-cone
 caprover deploy
+
+Preparing deployment to CapRover...
+
+? select the CapRover machine name you want to deploy to: xyz
+Ensuring authentication...
+? CapRover machine password: [hidden]
+? select the app name you want to deploy to: cone
+? git branch name to be deployed: main
+? note that uncommitted and gitignored files (if any) will not be pushed to server! Are you sure you want to deploy? Yes
+
+Saving tar file to: ".../temporary-captain-to-deploy.tar"
+Using last commit on "main": 2bf332cbc589b50d03e58b17b71be2415a6ff250
+
+Deploying cone to xyz...
+
+Uploading [====================] 100%  (ETA 0.0s)
+Upload done.
+
+This might take several minutes. PLEASE BE PATIENT...
+
+[...]
 ```
 
+And that's it...
