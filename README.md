@@ -49,7 +49,29 @@ Upload done.
 
 This might take several minutes. PLEASE BE PATIENT...
 
-[...]
+Building your source code...
+
+------------------------- Thu Nov 10 2022 01:41:49 GMT+0000 (Coordinated Universal Time)
+Build started for cone
+Ignore warnings for unconsumed build-args if there is any
+Step 1/3 : FROM kitware/trame
+
+---> e74b197b974f
+Step 2/3 : COPY --chown=trame-user:trame-user . /deploy
+
+---> Using cache
+---> 85dcdd452f2e
+Step 3/3 : RUN export TRAME_BUILD_ONLY=1 && /opt/trame/entrypoint.sh
+
+---> Using cache
+---> 23f30b5ae59d
+[Warning] One or more build-args [CAPROVER_GIT_COMMIT_SHA] were not consumed
+Successfully built 23f30b5ae59d
+Successfully tagged img-captain-cone:latest
+Build has finished successfully!
+
+Deployed successfully cone
+App is available at https://cone.xyz...
 ```
 
 And that's it...
